@@ -12,7 +12,7 @@
 
 ## 📌 Executive Summary
 
-This repository contains deep learning pipelines, transfer learning experiments, and representation probing benchmarks engineered for Earth Observation (EO) and satellite imagery. 
+This repository contains CNN implementation in C++ , transfer learning experiments, and representation probing benchmarks
 
 Due to unique spectral characteristics, spatial resolutions, and domain shifts in aerial imagery, standard ImageNet-pretrained representations often exhibit distinct transferability dynamics. This project systematically investigates feature representations across deep convolutional neural networks (e.g., ResNet-50) using linear probing, layer-wise probing, few-shot adaptation, and out-of-distribution robustness assessments.
 
@@ -39,6 +39,8 @@ Remote-Sensing-Deep-Learning-GNR638/
 
 ## 🔬 Core Methodologies & Experiments
 
+### 0. CNN Implementation in C++ (`A1/src/`)
+* Complete CNN implementation in C++ using only std library
 ### 1. Layer-Wise Feature Probing (`A2/Layer-wise_Feature_Probing`)
 * Trains linear classifiers on intermediate feature representations extracted from each residual stage of deep vision backbones.
 * Evaluates where geospatial and spectral domain features emerge (early edge detectors vs. late high-level semantic representations).
